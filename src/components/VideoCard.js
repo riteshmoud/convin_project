@@ -7,8 +7,6 @@ import { Edit } from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { Outlet, useNavigate, useOutletContext } from 'react-router-dom';
-import UpdateModal from './CardModal';
-import { logDOM } from '@testing-library/react';
 
 
 export default function VideoCard({id,title,link,thumbnail_link,category,isDeleted}) {

@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
 import Card from './VideoCard'
-import { Outlet } from 'react-router-dom'
-import { Navbar } from './Navbar'
 
 export const CardDisplay = () => {
 

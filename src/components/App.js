@@ -1,8 +1,6 @@
 import React from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import { Banner } from './Banner'
 import { CardDisplay } from './CardDisplay'
-import CreateCard from './CreateCard'
 import Home from './Home'
 import CardModal from './CardModal'
 import DeleteModal from './DeleteModal'
