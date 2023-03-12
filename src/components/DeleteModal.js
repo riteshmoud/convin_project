@@ -20,7 +20,7 @@ export default function DeleteModal() {
     .then((res)=>{
       console.log('Card Deleted');
       // window.location.href = 'https://regal-faloodeh-f925b1.netlify.app/dashboard'
-      window.location.replace("https://regal-faloodeh-f925b1.netlify.app/dashboard")
+      window.location.replace("https://master--regal-faloodeh-f925b1.netlify.app/dashboard")
     })
     .catch((err)=>{
       console.log(err);
