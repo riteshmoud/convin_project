@@ -9,7 +9,6 @@ import CreateCard from './CreateCard';
 const CardModal = () => {
   const [open, setOpen] = React.useState(true);
   const navigate = useNavigate()
-  let id
   let data = {
     name: '',
     link: '',

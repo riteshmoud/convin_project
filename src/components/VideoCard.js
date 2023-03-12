@@ -6,7 +6,7 @@ import CardHeader from '@mui/material/CardHeader';
 import { Edit } from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import { Outlet, useNavigate, useOutletContext } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 
 export default function VideoCard({id,title,link,thumbnail_link,category,isDeleted}) {

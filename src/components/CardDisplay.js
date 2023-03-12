@@ -6,7 +6,6 @@ import Card from './VideoCard'
 export const CardDisplay = () => {
 
     const [cards,updateCards] = useState([])
-    const [imgLink,setImgLink] = useState('')
     const [isDeleted,setIsDeleted] = useState(false)
 
     useEffect(()=>{
@@ -24,7 +23,7 @@ export const CardDisplay = () => {
         
     },[isDeleted])
 
-    const showCards = cards.map((item,idx)=>{
+    const showCards = cards.map((item)=>{
         return (
             <div key={item.id} className='m-6'>
                 <Card id={item.id} title={item.name} link={item.link} thumbnail_link={item.thumbnail_link} category={item.category} isDeleted={setIsDeleted}/>

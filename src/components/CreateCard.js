@@ -24,7 +24,7 @@ const CreateCard = ({name,link,category,thumbnail_link}) => {
             category,
             thumbnail_link
         })
-    },[name,link,category])
+    },[name,link,category,thumbnail_link])
 
     const createCard = async () => {
         //console.log(cardDetails);
