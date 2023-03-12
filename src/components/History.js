@@ -40,7 +40,7 @@ export const History = () => {
 
     useEffect(()=>{
         (async ()=>{
-            await axios.get('http://localhost:3000/history')
+            await axios.get('https://json-server-tpsw.onrender.com/history')
             .then((res)=>{
                 res.data = res.data.reverse()
                 updateCardsList(res.data)

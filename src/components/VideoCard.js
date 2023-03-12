@@ -28,7 +28,7 @@ export default function VideoCard({id,title,link,thumbnail_link,category,isDelet
     const minutes = date.getMinutes()
     const seconds = date.getSeconds()
     date = `${day}/${month}/${year}  ${hours}:${minutes}:${seconds}`
-    await axios.post('http://localhost:3000/history',{
+    await axios.post('https://json-server-tpsw.onrender.com/history',{
       name: title,
       video_id: id,
       link: link,

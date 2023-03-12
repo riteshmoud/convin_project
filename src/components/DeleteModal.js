@@ -17,7 +17,7 @@ export default function DeleteModal() {
   const onDelete = async () => {
     const path = window.location.pathname.split('/')
     const id = parseInt(path[path.length-1])
-    await axios.delete(`http://localhost:3000/videos/${id}`)
+    await axios.delete(`https://json-server-tpsw.onrender.com/videos/${id}`)
     .then((res)=>{
       console.log('Card Deleted');
       window.location.href = '/dashboard'

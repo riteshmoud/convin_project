@@ -26,7 +26,7 @@ const CardModal = () => {
         return;
       }
       (async ()=>{
-        await axios.get(`http://localhost:3000/videos/${id}`)
+        await axios.get(`https://json-server-tpsw.onrender.com/videos/${id}`)
         .then((res)=>{
           setCardDetails({
             name: res.data.name,

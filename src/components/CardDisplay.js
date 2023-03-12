@@ -13,7 +13,7 @@ export const CardDisplay = () => {
 
     useEffect(()=>{
 
-        axios.get('http://localhost:3000/videos')
+        axios.get('https://json-server-tpsw.onrender.com/videos')
         .then((res)=>{
             console.log(res.data);
             updateCards(res.data)

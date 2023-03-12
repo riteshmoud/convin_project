@@ -37,7 +37,7 @@ const CreateCard = ({name,link,category,thumbnail_link}) => {
         const imgLink = `https://img.youtube.com/vi/${video_id}/hqdefault.jpg`
 
         if(window.location.pathname === '/create_card'){
-            await axios.post('http://localhost:3000/videos',{
+            await axios.post('https://json-server-tpsw.onrender.com/videos',{
                 name: cardDetails.name,
                 link: cardDetails.link,
                 category: cardDetails.category,
@@ -56,7 +56,7 @@ const CreateCard = ({name,link,category,thumbnail_link}) => {
         const id = parseInt(path[path.length-1])
         if(window.location.pathname === `/dashboard/edit_card/${id}`){
             console.log('hello');
-            await axios.put(`http://localhost:3000/videos/${id}`,{
+            await axios.put(`https://json-server-tpsw.onrender.com/videos/${id}`,{
                 name: cardDetails.name,
                 link: cardDetails.link,
                 category: cardDetails.category,
