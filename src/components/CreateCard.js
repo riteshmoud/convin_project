@@ -65,7 +65,7 @@ const CreateCard = ({name,link,category,thumbnail_link}) => {
             .then((res)=>{
                 console.log('Data Updated');
                 changeCardDetails({ name: "", link: "", category: ""})
-                window.location.href = 'https://regal-faloodeh-f925b1.netlify.app/dashboard'
+                window.location.replace("https://regal-faloodeh-f925b1.netlify.app/dashboard")
             })
             .catch((err)=>{
                 console.log('Error occured');

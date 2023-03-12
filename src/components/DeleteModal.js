@@ -19,7 +19,8 @@ export default function DeleteModal() {
     await axios.delete(`https://json-server-tpsw.onrender.com/videos/${id}`)
     .then((res)=>{
       console.log('Card Deleted');
-      window.location.href = 'https://regal-faloodeh-f925b1.netlify.app/dashboard'
+      // window.location.href = 'https://regal-faloodeh-f925b1.netlify.app/dashboard'
+      window.location.replace("https://regal-faloodeh-f925b1.netlify.app/dashboard")
     })
     .catch((err)=>{
       console.log(err);
