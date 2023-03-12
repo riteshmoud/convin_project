@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button'
 import { Typography } from '@mui/material'
 import TextField from '@mui/material/TextField'
+import { toast } from 'react-toastify';
 import axios from 'axios'
 
 const CreateCard = ({name,link,category,thumbnail_link}) => {
@@ -31,6 +32,12 @@ const CreateCard = ({name,link,category,thumbnail_link}) => {
 
         // form validation here--------
         // check for empty felds-------
+        if(cardDetails.name.trim().length === 0 || cardDetails.link.trim().length === 0 || cardDetails.category.trim().length === 0){
+            toast.error("Enter all details", {
+                position: toast.POSITION.TOP_CENTER
+            });
+            return
+        }
 
         const link = cardDetails.link.split('https://youtu.be/')
         const video_id = link[1]

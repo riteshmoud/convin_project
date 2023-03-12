@@ -7,11 +7,14 @@ import DeleteModal from './DeleteModal'
 import { Navbar } from './Navbar'
 import { VideoModal } from './VideoModal'
 import { History } from './History'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
     return (
         <>
             <BrowserRouter>
+            <ToastContainer/>
             <Routes>
                 <Route path='/' element={<Home/>}>
                     <Route path='create_card' element={<CardModal/>}/>
